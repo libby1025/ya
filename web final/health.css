@@ -1,0 +1,197 @@
+.dropdown-menu form{
+    width: 330px;
+    padding: 20px;
+}
+.nd{
+    padding: 0 80px;
+    padding-bottom: 100px;
+    vertical-align: middle;
+}
+
+.container{
+    padding: 0 81px;
+}
+.title{
+    letter-spacing: 5px;
+    padding-top:100px; 
+    padding-bottom: 50px;
+}
+.botto{
+    background-color: rgb(89, 168, 175, .8) ;
+    color: #ffffff;
+    padding: 40px 0;
+}
+.botto img{
+    width: 55%;
+    position: relative;
+    left: 35%;
+    top: 0px;
+}
+.infor h5{
+    letter-spacing: 5px;
+    color: #437c81;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.infor p{
+    letter-spacing: 3px;
+    color: rgb(67, 124, 129, .65);
+    padding-top:15px;
+    font-weight: 450;
+    font-size: 16px;
+}
+.heart img{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    margin: auto 0;
+}
+
+.overlayLeftBtn {
+    padding: 50px ;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlayLeftBtn span {
+    color: #437c81;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.overlayLeftBtn::before {
+    content: '';;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 8px;
+    transform: translate(-101%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(108, 115, 125, .5);
+    transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);;
+}
+
+.overlayLeftBtn:hover span {
+    color: #437c81;
+}
+
+.overlayLeftBtn:hover::before {
+    transform: translate(0, -50%);
+    
+}
+.card-body{
+    padding-top: auto ;
+    color: #ffffff;
+    padding-top: 30px;
+}
+.card-title{
+    letter-spacing: 4px;
+    line-height: 27px;
+}
+.card-text{
+    letter-spacing: 2px;
+    line-height: 25px;
+    padding-top: 10px;
+    
+}
+.fpppp{
+    margin: auto 0;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.pulseBtn {
+    padding: 12px 24px;
+    background-color: rgb(108, 115, 125, .5);
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 #d4e0f0;
+    animation: pulse 1.45s infinite cubic-bezier(0.66, 0, 0, 1);
+    margin: 60px auto;
+    width: 100px;
+    margin-bottom: 80px;
+    letter-spacing: 1px;
+}
+.pulseBtn1 {
+    padding: 12px 24px;
+    background-color: rgb(108, 115, 125, .5);
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 #d4e0f0;
+    animation: pulse 1.45s infinite cubic-bezier(0.66, 0, 0, 1);
+    margin: 60px auto;
+    width: 100px;
+    margin-top: 0;
+    margin-bottom: 100px;
+    letter-spacing: 1px;
+}
+
+@keyframes pulse {
+    to {
+      box-shadow: 0 0 0 30px rgba(230, 237, 255, 0);
+    }
+}
+.box-wray {
+    width: 380px;
+    position: all 1.1s;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.box-wray:hover .img img {
+    transform: scale(1.12);
+    transition: all 1s;
+}
+
+.img {
+    max-width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img img {
+    max-width: 100%;
+   height: 100%;
+}
+.overlayLeftBtn:hover img {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+.pressDownButton {
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 25px;
+    border-radius: 8px;
+    border-bottom: 8px solid rgb(108, 115, 125, .35);
+    border-top: 0px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+    width: 405px;
+    margin: 12px auto;
+}
+.pressDownButton img{
+    border-radius: 5px;
+    box-shadow: 8px 8px 12px #a7a6a6;
+}
+
+.pressDownButton:hover {
+    border-bottom-width: 0;
+    border-top-width: 8px;
+    background-color: rgb(108, 115, 125, .3);
+}
+.pressDownButton:hover img{
+    transform: scale(.96);
+    transition: all .8s;
+}
+.card-titlep{
+    padding-top: 20px;
+    letter-spacing: 2px;
+    color: #437c81;
+}
+.card-titlep:hover {
+    transform: scale(.95);
+    transition: all .8s;
+}

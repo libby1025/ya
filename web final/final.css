@@ -1,0 +1,250 @@
+.container{
+    padding-top: 45px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+}
+.container1 h2{
+    letter-spacing: 5px;
+}
+
+.dropdown-menu form{
+    width: 330px;
+    padding: 20px;
+}
+.head3{
+    padding-top: 80px;
+}
+.container1{padding: 100px 100px 100px;
+    background-image: url(cat.png);
+    background-repeat: no-repeat;
+}
+.box-wray {
+    width: 400px;
+    position: all 1.1s;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.box-wray:hover .img img {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.img {
+    max-width: 100%;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img img {
+    max-width: 100%;
+    height: 200px;
+}
+.f {
+    width: 100%;
+    color: black;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 15px;
+}
+.box-wrayic {
+    width: 90px;
+    position: all 1.1s;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.box-wrayic:hover .imgic img {
+    transform: rotate(360deg);
+    transition: all 1s;  
+}
+.imgic {
+    max-width: 100%;
+    height: 60px;
+    overflow: hidden;
+    
+}
+.imgic img {
+    max-width: 100%;
+    height: 50px;
+}
+.ln{
+    line-height: 3;
+    letter-spacing:5px;
+    
+}
+.service h2{
+    letter-spacing:10px;
+}
+.pho{
+    padding-top: 90px;
+    height: auto;
+}
+.pho img{
+    border-radius: 0 150px 0px 0 ;
+    width: 100%;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border-radius: 30px ;
+    transition: transform 0.25s ease;
+    
+}
+.card p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.card a{
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 0;
+}
+.card:hover .btn {
+    background: #59a8af;
+    color: #ffffff;  
+}
+.card:hover {
+    transform: translate3d(0px,-1px,0px);
+    background-color: rgb(167, 222, 227, .2);
+    box-shadow: 0 10px 20px rgba(50,50,93,.2), 0 10px 15px #59a8af;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+
+.head33{
+    letter-spacing:5px;
+}
+.bgw{
+background-color: #eaedf0;
+    padding-bottom: 100px;
+    padding-top: 50px;
+
+}
+.col-2{
+    width: 20%;
+}
+.blockquote{
+    padding-top: 100px;
+    letter-spacing:5px;
+}
+.blockquote2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    letter-spacing:5px;
+}
+.blockquote-footer{
+    line-height: 20px;
+    letter-spacing:3px;
+}
+.accordion{
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+}
+.bgq{
+    background-color: rgb(234, 237, 240, 0.8);
+    padding: 40px ;
+     border-radius:  100px 100px 0 0;
+}
+.blockquote-footer{
+    padding-bottom: 40px;
+    letter-spacing:1px;
+}
+.accordion-collapse{
+    color:  #6c737d;
+    letter-spacing:3px;
+}
+.accordion-button{
+    letter-spacing: 3px;
+}
+.infor h5{
+    letter-spacing: 5px;
+    color: #437c81;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.infor p{
+    letter-spacing: 3px;
+    color: rgb(67, 124, 129, .65);
+    padding-top:15px;
+    font-weight: 450;
+    font-size: 16px;
+}
+.botto{
+    background-color: rgb(89, 168, 175, .8) ;
+    color: #ffffff;
+    padding: 40px 0;
+}
+.botto img{
+    width: 55%;
+    position: relative;
+    left: 35%;
+    top: 0px;
+}
+.arrowFromLeft {
+    overflow: hidden;
+    padding: 10px 28px;
+    border-radius: 10px;
+    background-color: rgb(108, 115, 125, .4);
+    color: #ffffff;
+    position: relative;
+}
+
+.arrowFromLeft div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowFromLeft:hover span {
+    transform: translateX(10px);
+}
+
+.arrowFromLeft:hover svg {
+    opacity: 1;
+    transform: translate(10px, -50%);
+}
+
+.arrowFromLeft span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.455,.03,.515,.955);
+}
+
+.arrowFromLeft svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    fill: hsl(0, 0%, 100%);
+    opacity: 0;
+    transform: translate(-10px, -50%);
+    transition: opacity .3s .05s cubic-bezier(.455,.03,.515,.955), transform .3s .05s cubic-bezier(.455,.03,.515,.955);
+}
+.infor{
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin: auto 0;
+}
+
+.pulseBtn {
+    padding: 12px 24px;
+    background-color: rgb(108, 115, 125, .55);
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 #d4e0f0;
+    animation: pulse 1.45s infinite cubic-bezier(0.66, 0, 0, 1);
+    margin: 0 auto;
+    width: 100px;
+    margin-bottom: 80px;
+}
+
+@keyframes pulse {
+    to {
+      box-shadow: 0 0 0 30px rgba(230, 237, 255, 0);
+    }
+}

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--
+    <script>
+        $(".toggle-icon").click(function() {
+            $('#nav-container').toggleClass("pushed");
+        });
+
+    </script>
+-->
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="cover1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="cover2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="cover3.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="cover4.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="cover5.jpeg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo.png " alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="health.html" target="_blank" >毛小孩健康站</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            提問題
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">遛寵物</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">找專業 </a></li>
+                            <li><a class="dropdown-item" href="#">找知識</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            會員登入
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <form>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+                                    <div class="col-sm-9">
+                                        <input type="password" class="form-control" id="inputPassword3">
+                                    </div>
+                                </div>
+
+                                <a href="login.html" target="_blank" ><button type="submit" class="btn btn-secondary">註冊</button></a>
+                                <button type="submit" class="btn btn-primary">登入</button>
+                            </form>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container1">
+       <h2>服務</h2>
+        <div class="row justify-content-center ">
+            <div class=" col-lg-6 col-md-12  order-lg-1 order-md-2 order-sm-2">
+                
+                <div class="containerbox">
+                    <div class="row">
+                        <div class="col">
+                            <div class="box-wrayic bg-light">
+                                <div class="imgic img-fluid ">
+                                    <img src="ic_fb.png" style="display:block; margin:auto" alt="圖">
+                                </div>
+                                <div class="f">
+                                    <div class="row">
+                                        <div class="col align-self-start text-center">
+                                            <h6> FB</h6>
+                                            <small class="text-muted text-center">社群服務</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="box-wrayic bg-light">
+                                <div class="imgic img-fluid ">
+                                    <img src="ic_phone.png" style="display:block; margin:auto" alt="圖">
+                                </div>
+                                <div class="f">
+                                    <div class="row">
+                                        <div class="col align-self-start text-center">
+                                            <h6> APP</h6>
+                                            <small class="text-muted text-center">行動服務</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="box-wrayic bg-light">
+                                <div class="imgic img-fluid ">
+                                    <img src="ic_home.png" style="display:block; margin:auto" alt="圖">
+                                </div>
+                                <div class="f">
+                                    <div class="row">
+                                        <div class="col align-self-start text-center">
+                                            <h6> 官網</h6>
+                                            <small class="text-muted text-center">知識服務</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="box-wrayic bg-light">
+                                <div class="imgic img-fluid ">
+                                    <img src="ic_active.png" style="display:block; margin:auto" alt="圖">
+                                </div>
+                                <div class="f">
+                                    <div class="row">
+                                        <div class="col align-self-start text-center">
+                                            <h6> 活動</h6>
+                                            <small class="text-muted text-center">講座活動</small>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-5 col-md-12  order-lg-2 order-md-1 order-sm-1">
+                <p class="ln">PetTalk愛寵團隊由全台灣200家上動物醫院與美容院、上百位專業獸醫師與美容師,及國內外寵物產業專業人士組成。<br>我們致力於維護犬貓的健康,以傳遞正確的小動物醫療觀念及知識為核心、發展多化的溝通渠道<small class="text-muted">(FB社群、官方網頁、APP、影音媒體、愛寵實體活動)</small>,並致力於解決飼主的問題,強化專業獸醫師與飼主之間的溝通,讓犬貓得到最正確的照顧和擁有更健全的生活。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pho">
+
+        <img src="dog-01.jpg" class="img-fluid" alt="...">
+
+    </div>
+
+    <div class="bgw ">
+        <div class="head3">
+            <div class="row justify-content-around">
+                <div class="head33 col-4 ">
+                    <h2>愛寵知識</h2>
+                </div>
+                <div class="col-4">
+                    <div class="col  d-flex justify-content-evenly ">
+                        <div class="arrowFromLeft"><svg xmlns="http://www.w3.org/2000/svg" width="5.002" height="8.576" viewBox="0 0 5.002 8.576">
+                                <path d="M1.06,8.428a.5.5,0,0,1-.71,0l-.2-.2A.49.49,0,0,1,0,7.868V.708A.49.49,0,0,1,.15.348l.2-.2a.5.5,0,0,1,.71,0l3.79,3.79a.48.48,0,0,1,0,.7Z"></path>
+                            </svg><span>Learn more </span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container overflow-hidden">
+            <div class="row  gy-4">
+
+                <div class="col"><a href="https://www.pettalk.tw/blog/%E3%80%90PetTalk%E4%BE%86%E9%96%8B%E7%AE%B1%E3%80%91%E8%80%81%E5%B9%B4%E7%8A%AC%E8%B2%93%E7%9A%84%E5%81%A5%E5%BA%B7%E8%80%81%E6%9C%AC%EF%BC%8C%E9%80%99%E6%A8%A3%E5%90%83%E7%B6%AD%E6%8C%81%E8%82%8C%E8%82%89%E9%87%8F%EF%BD%9C%E5%B0%88%E6%A5%AD%E7%8D%B8%E9%86%AB%E2%80%94%E5%90%B3%E5%B1%95%E7%A5%A5" class="text-decoration-none">
+                        <div class="box-wray bg-light ">
+                            <div class="img img-fluid">
+                                <img src="box1.png" class="w3-hover-grayscale " alt="圖">
+                            </div>
+                            <div class="f">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5> <span class="badge bg-success text-white">寵物鮮食</span></h5>
+                                        【PetTalk來開箱】老年犬貓的健康老本，這樣吃維持肌肉量｜專業獸醫—吳展祥
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.pettalk.tw/blog/%E8%AE%93%E8%B2%93%E5%96%9D%E6%B0%B4%E9%80%99%E4%BB%B6%E4%BA%8B%EF%BC%8C%E8%B2%93%E7%9A%84%E9%A3%B2%E6%B0%B4%E8%A9%B2%E6%93%BA%E5%9C%A8%E5%93%AA%EF%BC%9F%EF%BD%9C%E8%B2%93%E8%A1%8C%E7%82%BA%E7%8D%B8%E9%86%AB%E2%80%94%E6%9E%97%E5%AD%90%E8%BB%92" class="text-decoration-none">
+                        <div class="box-wray bg-light">
+                            <div class="img img-fluid">
+                                <img src="box2.png" alt="圖">
+                            </div>
+                            <div class="f">
+                                <div class="row">
+                                    <div class="col align-self-start">
+                                        <h5> <span class="badge bg-warning">貓醫生的觀察日記</span></h5>
+                                        讓貓喝水這件事，貓的飲水該擺在哪？｜貓行為獸醫—林子軒
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.pettalk.tw/blog/%E8%B2%93%E5%A5%B4%E6%83%A1%E5%A4%A2%EF%BC%8C%E8%B2%93%E4%B8%8B%E6%B3%8C%E5%B0%BF%E9%81%93%E7%96%BE%E7%97%85%E6%9C%83%E5%A5%BD%E5%97%8E%EF%BC%9F%EF%BD%9C%E5%B0%88%E6%A5%AD%E7%8D%B8%E9%86%AB%E2%80%94%E6%9E%97%E5%AE%B6%E4%BD%91" class="text-decoration-none">
+                        <div class="box-wray bg-light">
+                            <div class="img img-fluid">
+                                <img src="box3.png" alt="圖">
+                            </div>
+                            <div class="f">
+                                <div class="row">
+                                    <div class="col align-self-start">
+                                        <h5> <span class="badge bg-warning">貓醫生的觀察日記</span></h5>
+                                        貓奴惡夢，貓下泌尿道疾病會好嗎？｜專業獸醫—林家佑
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="head3">
+            <div class="row justify-content-around">
+                <div class="head33 col-4">
+                    <h2>愛寵活動</h2>
+                </div>
+                <div class="col-4">
+                    <div class="col  d-flex justify-content-evenly ">
+                        <div class="arrowFromLeft"><svg xmlns="http://www.w3.org/2000/svg" width="5.002" height="8.576" viewBox="0 0 5.002 8.576">
+                                <path d="M1.06,8.428a.5.5,0,0,1-.71,0l-.2-.2A.49.49,0,0,1,0,7.868V.708A.49.49,0,0,1,.15.348l.2-.2a.5.5,0,0,1,.71,0l3.79,3.79a.48.48,0,0,1,0,.7Z"></path>
+                            </svg><span>Learn more </span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container overflow-hidden">
+            <div class="row gx-0 gy-4 align-self-center">
+
+                <div class="col me-auto">
+                    <a href="https://www.pettalk.tw/activity/%E9%98%BF%E8%B2%9D%E5%AE%B6ABAE%2B%EF%BD%9C%E9%A3%9F%E7%94%A8%E7%B4%9A%E5%AF%B5%E7%89%A9%E9%99%A4%E8%87%AD%E5%99%B4%E9%9C%A7%E4%BB%8B%E7%B4%B9" class="text-decoration-none">
+                        <div class="box-wray bg-light">
+                            <div class="img img-fluid">
+                                <img src="doga.png" alt="圖">
+                            </div>
+                            <div class="f">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5> <span class="badge bg-danger text-white">優惠活動</span></h5>
+                                        阿貝家ABAE+｜食用級寵物除臭噴霧介紹
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col me-auto">
+                    <a href="https://www.pettalk.tw/activity/Dogsee%EF%BD%9C%E5%85%A8%E5%93%81%E9%A0%85%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9" class="text-decoration-none">
+                        <div class="box-wray bg-light">
+                            <div class="img img-fluid">
+                                <img src="dogy.jpg" alt="圖">
+                            </div>
+                            <div class="f">
+                                <div class="row">
+                                    <div class="col align-self-start">
+                                        <h5> <span class="badge bg-danger text-white">優惠活動</span></h5>
+                                        Dogsee｜全品項產品介紹
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col me-auto">
+                    <a href="https://www.pettalk.tw/activity/PetTalk%E8%AA%AA%E5%AF%B5%E7%89%A9%EF%BD%9CPodcast%E9%A0%BB%E9%81%93%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%B7%9A%EF%BC%81" class="text-decoration-none">
+                        <div class="box-wray bg-light">
+                            <div class="img img-fluid">
+                                <img src="podcast.jpg" alt="圖">
+                            </div>
+                            <div class="f">
+                                <div class="row">
+                                    <div class="col align-self-start">
+                                        <h5> <span class="badge bg-info text-white">品牌活動</span></h5>
+                                        PetTalk說寵物｜Podcast頻道正式上線！
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <h2>我們的團隊</h2>
+        </blockquote>
+    </figure>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-4 g-1 g-lg-3">
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3">
+                    <div class="card border-light mb-3 ">
+                        <img src="2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">郭旆妤 專業獸醫</h6>
+                            <p class="card-text">國立嘉義大學獸醫學系學士</p>
+                            <a href="https://www.pettalk.tw/doctors/115" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">李道絨 專業獸醫</h6>
+                            <p class="card-text ">國立中興大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/104" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3">
+                    <div class="card border-light mb-3">
+                        <img src="3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">黃硯庭 專業獸醫</h6>
+                            <p class="card-text ">國立中興大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/95" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">曾光佑 專業獸醫</h6>
+                            <p class="card-text ">國立中興大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/90" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="5.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">梁明哲 專業獸醫</h6>
+                            <p class="card-text ">國立嘉義大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/89" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="6.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">陳文順 專業獸醫</h6>
+                            <p class="card-text ">國立嘉義大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/88" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="7.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">王小玲 專業獸醫</h6>
+                            <p class="card-text ">國立嘉義大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/83" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="8.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">謝佳紋 專業獸醫</h6>
+                            <p class="card-text ">國立嘉義大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/81" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="9.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">傅裕昇 專業獸醫</h6>
+                            <p class="card-text ">國立嘉義大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/80" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="10.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">王文秀 專業獸醫</h6>
+                            <p class="card-text ">國立中興大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/79" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="11.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">戴哲南 專業獸醫</h6>
+                            <p class="card-text ">國立嘉義大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/77" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-6">
+                <div class="p-3 ">
+                    <div class="card border-light mb-3">
+                        <img src="12.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">杜瑜欣 專業獸醫</h6>
+                            <p class="card-text ">國立嘉義大學獸醫學系學士
+
+                            </p>
+                            <a href="https://www.pettalk.tw/doctors/76" class="btn btn-light text-decoration-none">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pulseBtn text-center">More</div>
+
+    <div class="bgq">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <figure class="text-center">
+                    <blockquote class="blockquote2">
+                        <h2>常見問題</h2>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        說寵物開始於2015年成立，在線提供飼主寵物居家照護知識及資詣。<br>可加入會員線上發問，或是加入LINE@好友，點選"寵物護照"頁面下方的"貓掌 問問題"，即可和獸醫師諮詢。
+                        <cite title="Source Title"><br>LINE@好友連結:<a href="https://lihi1.cc/BcDeL">https://lihi1.cc/BcDeL</a></cite>
+                    </figcaption>
+                </figure>
+                <h2 class="accordion-header " id="flush-headingOne">
+                    <button class="accordion-button collapsed text-center " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        如果用了滴劑，同時又用了除蚤項圈，會有影響嗎？
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body ">原則上是沒影響的，因為市面上的頸圈成分與滴劑是不同藥物，而且作用機制不同，使用方式也不同，所以如果是感染機率高的動物，建議合併使用效果會較好。</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header text-center" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        狗狗吐出黃色液體怎麼辦？
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">吐黃色消化液需注意狗狗是否長時間挑食或空腹過久所致，必要時可請醫師檢查後開藥!《全國動物醫院-林源盛醫師回覆》</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header text-center" id="flush-headingThree">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        狗狗喜歡抓耳朵？
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">愛抓耳朵也不見得是壓力啦，有的時候可能是反射動作，狗狗碰到一些情況可能會抓抓頭搔搔頭。只要醫師檢查確認過耳道沒有異狀、耳朵外圍的皮膚也沒有特殊的皮膚病，就沒有問題。
+                        除非說，耳道旁邊會有皮屑、耳道內有分泌物，那就要再檢查囉。</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header text-center" id="flush-heading5">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseThree">
+                        狗狗咬下絲線在吞進肚子裡會有關係嗎？
+                    </button>
+                </h2>
+                <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">其實會吃進去的量不會很多，沒什麼問題。 當然，如果狗狗是屬於會不斷啃咬吞食的，那就不適合這類型的潔牙玩具，可以改成其他的潔牙零嘴。</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header text-center" id="flush-heading4">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapseThree">
+                        哪些狗狗可能得到趾間炎？
+                    </button>
+                </h2>
+                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">〈1〉趾間毛髮濃密的狗狗<br>
+                        〈2〉短毛品種的狗狗<br>
+                        〈3〉愛到廁所潮濕地板閒晃的狗狗<br>
+                        〈4〉外出回家後洗腳沒有擦乾的狗狗<br>
+                        〈5〉腳掌傷口細菌入侵的狗狗</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header text-center" id="flush-heading6">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapseThree">
+                        貓咪會有分離焦慮症嗎？
+                    </button>
+                </h2>
+                <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">貓咪也會有分離焦慮症，貓咪分離焦慮症往往不大會表現在破壞物品、亂尿尿等方式上(當然如果是平常偶爾的情緒發洩還是會有這些情形)。 <br>
+
+                        最常見的症狀是「啃咬自己身上的毛」，有點半自虐的傾向。牠會不斷的舔、咬身體兩側的毛，有時候甚至一夜之間就把一邊的毛咬光了，這就要特別注意囉。</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header text-center" id="flush-heading7">
+                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapseThree">
+                        狗糞便和犬冠狀病毒有關？
+                    </button>
+                </h2>
+                <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">做好糞便處理是預防犬冠狀病毒第一步，犬冠狀病毒的傳染力非常強，如果家中同時有多隻狗狗，幾乎所以有的狗狗都會同時感染。 記得!狗狗排便後當成垃圾處理或者是丟到馬桶沖掉! 定期接種疫苗也可以預防優~!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="botto">
+       <div class="row justify-content-evenly">
+    <div class="col-4 align-self-center">
+      <img src="dogbb.png" alt="">
+    </div>
+    <div class="infor col-6 align-self-center">
+      <div class="row gx-5 justify-content-end">
+    <div class="col">
+      <h5>信息</h5>
+<p>聯繫以獲取更多信息:</p> 
+
+<a class="text-white" href="mailto:service@pettalk.tw">service@pettalk.tw </a><br> 
+
+<p>電話：</p>+(886) 02-8770-6833
+
+    </div>
+    <div class="col">
+     <h5>地點和時間</h5>
+      <p>地點:</p>
+松山區敦化北路153-10號4樓
+<p>時間:</p>
+平日：9a.m.~ 6p.m. <br>周末：休息
+    </div>
+  </div>
+    </div>
+  </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>
